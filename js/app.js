@@ -25,3 +25,25 @@ ulFragment.appendChild(liElement);
 
 ulNav.appendChild(ulFragment);
 
+
+//set as active
+
+let options = {
+    threshold : 0.3
+}
+// to observe every section element
+let observer = new IntersectionObserver(callback,options);
+listOfSections.forEach(section => {
+    observer.observe(section);
+});
+// to loop sections and add 'activeSection' class when intersecting.
+// if no intersection remove the class 
+function callback(enteries){
+    enteries.forEach(entry => {
+        if (entry.isIntersecting){
+            entry.target.classList.add('activeSection');
+        }else{
+            entry.target.classList.remove('activeSection')
+        }
+    });
+};
