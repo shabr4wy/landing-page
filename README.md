@@ -2,13 +2,13 @@
 
 ## Table of Contents
 
-* description
-* Used languages and version control
-* Instructions
-* used API
-* Javscript functionalities
+* [Description](#Description)
+* [Used languages and version control](#Used-languages-and-version-control)
+* [Instructions](#Instructions)
+* [Used API](#Used-API)
+* [Javscript functionalities](#Javscript-functionalities)
 
-## description
+## Description
 
 building a multi-section landing page with a dynamically updating navigational menu based on the amount of content that is added to the page.
 
@@ -30,7 +30,7 @@ building a multi-section landing page with a dynamically updating navigational m
 * add specifec style for section bieng viewed.
 * There must be at least 4 sections that have been added to the page.
 
-## Landing Page Behavior
+### Landing Page Behavior
 * Navigation must be built dynamically as an unordered list.
 * It must be clear which section is being viewed while scrolling through the page.
 * When clicking an item from the navigation menu, the link must scroll smoothly to the
