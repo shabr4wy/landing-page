@@ -10,12 +10,12 @@ const listOfli = document.querySelectorAll('li');
 
 const ulFragment = document.createDocumentFragment();
 
-listOfSections.forEach(function(elem){
+listOfSections.forEach((elem) => {
 let liElement = document.createElement('li');
 liElement.classList.add('menuLink');
 liElement.textContent = elem.dataset.nav;
 // Scroll to section on link click
-liElement.addEventListener('click',function(){
+liElement.addEventListener('click',() => {
     elem.scrollIntoView({
         behavior : "smooth"
     })
