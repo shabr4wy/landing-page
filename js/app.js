@@ -10,16 +10,13 @@ const listOfli = document.querySelectorAll('li');
 
 const ulFragment = document.createDocumentFragment();
 
-listOfSections.forEach((elem) => {
+listOfSections.forEach((elem, i) => {
 let liElement = document.createElement('li');
 liElement.classList.add('menuLink');
-liElement.textContent = elem.dataset.nav;
-// Scroll to section on link click
-liElement.addEventListener('click',() => {
-    elem.scrollIntoView({
-        behavior : "smooth"
-    })
-})
+const linkElement= document.createElement('a');
+linkElement.setAttribute('href',`#section${i+1}`)
+linkElement.textContent = elem.dataset.nav;
+liElement.appendChild(linkElement);
 ulFragment.appendChild(liElement);
 });
 
